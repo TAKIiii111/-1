@@ -1,3 +1,7 @@
+//这份代码是本人自己学习中写的测试代码，未能解决问题：分类统计输入的字符类型个数（scanf不能读取空格，可以使用getchar()来截取）；
+//本代码scanf()中使用的是输入%s，故会读取不到换行与空格
+//在xixi.c中会使用另一种输入格式能完成本功能
+
 #define  _CRT_SECURE_NO_WARNINGS
 
 #include<stdio.h>
@@ -8,7 +12,7 @@ int main()
 
 	printf("%s\n", str1);
 
-	printf("������һ���ַ���");
+	printf("请输入一行字符：");
 
 	scanf("%s", str1);
 
@@ -43,7 +47,7 @@ int main()
 		}
 	}
 
-	printf("��ĸ����Ϊ��%d\n���ָ���Ϊ��%d\n�ո����Ϊ��%d\n�����ַ�����Ϊ��%d", word,num,space,other);
+	printf("字母个数为：%d\n数字个数为：%d\n空格个数为：%d\n其他字符个数为：%d", word,num,space,other);
 
 	
 	return 0;
